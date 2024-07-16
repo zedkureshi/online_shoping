@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .heading {
+            background-color: aquamarine;
+            width: 100%;
+            height: 50px;
+            text-align: center;
+            justify-content: space-between;
+            display: flex;
+            align-items: center;
+            margin: auto;
+            padding: 10px 0;
+        }
+
+        a {
+            margin: 20px;
+            text-decoration: none;
+        }
+
+        button {
+            background-color: lightblue;
+            text-align: center;
+            border-radius: 4px;
+            height: 30px;
+            width: 100px;
+        }
+
+        .main {
+            background-color: white;
+            height: 700px;
+            width: 25%;
+            margin: 0 auto;
+            justify-content: center;
+            border: 3px solid lightpink;
+            border-radius: 6px;
+            padding: 10px;
+
+        }
+
+        input[type="text"],
+        [type="password"] {
+            width: 90%;
+        }
+
+        textarea {
+            margin-left: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="background-color: gainsboro;">
+        <div class="heading">
+            <div>
+                <a href="/index.html">Home</a>
+                <a href="">Pages</a>
+                <a href="/shop.html">Shop</a>
+                <a href="/Elements.html">Elements</a>
+                <a href="/blog.html">Blog</a>
+                <a href="/contact.html">Contact</a>
+            </div>
+        </div>
+
+        <div class="main">
+
+            <h1>Enter Personal Detail</h1>
+            <form action="">
+
+                <label for="name">Name:</label>
+                <div>
+                    <input type="text" id="name" name="name" value="Enter Your Name" required>
+                </div>
+                <br>
+                <label for="pwd">Password:</label>
+                <div>
+                    <input type="password" id="pwd" name="pwd" required>
+                </div>
+                <br>
+                <div>
+                    <label for="gender">Gender</label>
+                    <input type="radio" name="gender" id="gender" required>Male
+                    <input type="radio" name="gender" id="gender" required>Female <br>
+                </div>
+                <br>
+                <div>
+                    <label for="hobbies">Hobbies</label>
+                    <input type="checkbox" id="hobbies" name="hobbies" required>Music
+                    <input type="checkbox" id="hobbies" name="hobbies" required>Football <br>
+                </div>
+                <br><br>
+
+                <label for="message">Message:</label>
+                <div>
+                    <textarea name="message" id="message" rows="8" cols="30">Felix Tt's System</textarea><br>
+                </div>
+                <br>
+                <div>
+                    <label for="country">Country</label>
+                    <select name="country" id="country" size="3" multiple>
+                        <option value="India">India</option>
+                        <option value="Pakistan">Pakistan</option>
+                        <option value="Nepal">Nepal</option>
+                        <option value="China">China</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label for="cars">Cars</label>
+                    <select name="cars" id="cars">
+                        <option value="Innova">Innova</option>
+                        <option value="volvo">Volvo</option>
+                        <option value="saab">Saab</option>
+                        <option value="opel">Opel</option>
+                        <option value="audi">Audi</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label for="cars">Cars</label>
+                    <select name="cars" id="cars">
+                        <option></option>
+                        <optgroup label="Swedish Cars">
+                            <option value="volvo">Volvo</option>
+                            <option value="saab">Saab</option>
+                        </optgroup>
+                        <optgroup label="German Cars">
+                            <option value="mercedes">Mercedes</option>
+                            <option value="audi">Audi</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label for="file">Upload File</label>
+                    <input type="file" id="file" name="file" required>
+                </div>
+                <br>
+                <button>
+                    <a href="/login.html">SingUp</a>
+                </button>
+
+
+                <button>
+                    Reset
+                </button>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
